@@ -1,0 +1,178 @@
+/*universal selector which controls the entire page*/
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/*Type selectors*/
+body{
+    background-color:darksalmon;
+    /*Adding margins and space from the body */
+    margin: 0px auto ;
+    padding: 50px;
+    font-family: 'Courier New';
+}
+
+h1{
+    background-color: black;
+    color: brown;
+}
+/*ID & Class selector*/
+          .mydiv{font-size: 70px; color: crimson;}
+          #mydiv{color:chartreuse;}
+/*Grouping selector which is used to select multiple tags and each tag is seperated with a comma*/
+          th, tr, td{
+            padding: 40px;
+          }
+
+          strong,sub,del,b,h6{
+            padding: 30px;
+          }
+/*Child selector which is used when there is a tag inside another tag*/
+          #text>span{
+            color: gold;
+            background-color: green;
+            opacity: .3; /*way to reduce opacity of background and text*/
+          }
+          
+/*Colours in css*/
+        .cls{
+          background-color: rgba(255,255,255, 0.3); /*way to reduce opacity of background only*/
+        }
+
+        /*Background images in css*/
+        /*body{
+          background-image: url("../Jiji/Screenshot_20220313-062936_InShot.jpg"); /*image is small so it repeats and the
+          way to solve this is to remove repeat*/
+          /*background-repeat: repeat-y; */
+          /*background-repeat: no-repeat;
+          background-position: right top;
+          background-size: contain; /*cover or contain*
+          
+        }*/
+
+        /*Add background image/colour to a specific element/tag not the entire background*/
+        #mypar{
+          background: url("../Jiji/20211009_162820.jpg");
+          /*You can also use other background properties for this specific element
+          it follows a particular order: color, image, repeat& position*/
+        }
+        /*Adding borders in css*/
+        #mypra{
+          border-style: groove;
+          border-width: 5px 4px 7px 50px;
+          border-color: cornflowerblue;
+        }
+        /*Individual border properties*/
+        #myrap{
+          border-top-style: dashed;
+          border-right-style: dotted;
+          border-bottom-style: double;
+          border-left-style: groove;
+        }
+        /*Border Shorthands*/
+        #myrpa{
+          border: 20px groove violet;
+        }
+        /*Border radius*/
+        #morpa{
+          border: 50px groove violet;
+          border-radius: 20px;
+        }
+        /*Borders on images*/
+        #myimg{
+          border: 10px solid chartreuse;
+          border-radius: 50px;
+        }
+        /*Margins to specific texts*/
+        .section{
+          background-color: azure;
+          margin: 0 auto;
+          padding: 50px;
+        }
+        /*Creating a box*/
+        .box{
+          height: 300px;
+          width: 200px;
+          max-width: 1300px; /*handling horizontal scroll bar on smaller screens*/
+          background-color: brown;
+          color: coral;  /*Text color*/
+          margin: 20px auto; /*Center block elements only*/
+          text-align: justify; /*center,left,right,justify(to make text straight)*/
+          text-decoration-line: underline;
+          text-decoration-color: white;
+          text-decoration-style: double;
+          letter-spacing: 0.5px;
+          word-spacing: 1px;
+          text-shadow: 2px 2px 2px black;
+          font-weight: 600;
+        }
+        .link1{
+          text-decoration: none;
+          color: aliceblue;
+          text-transform: capitalize; /* text-transform: lowercase,uppercase,capitalize */
+          font-size: 50px;
+          font-weight: 900;
+        }
+        .link2{
+          text-decoration: none;
+          padding: 20px 30px;
+          background-color: brown;
+          color: coral;
+          border-radius: 15px;
+          border: 5px groove chocolate;
+          font-size: 18px;
+        }
+        .link2:hover{
+          background-color: coral;
+          color: brown;
+          border: none;
+        }
+        .link3{
+          text-decoration: none;
+          padding: 20px 30px;
+          background-color: wheat;
+          color: coral;
+          border-radius: 15px;
+          border: none;
+          font-size: 18px;
+        }
+        .link3:hover{
+          background-color: coral;
+          color: wheat;
+          border: 5px groove chocolate;
+          transition: .3s ease-in-out; /*There are other transition options*/
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
